@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forside - Min Nettbutikk</title>
+  <title>Forside</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -13,7 +13,9 @@
   <header class="header">
     <div class="header-content">
       <div class="mobile-icons">
-        <i class="fas fa-search"></i>
+        <a href="order.html" aria-label="Gå til bestillingssiden">
+          <i class="fas fa-search"></i>
+        </a>
         <i class="fas fa-user"></i>
         <i class="fas fa-bars"></i>
     </div>
@@ -23,14 +25,16 @@
       </div>
       <div class="user-container">
         <div class="user-options">
-        <i class="fas fa-search"></i>
+          <a href="order.html" aria-label="Gå til bestillingssiden">
+            <i class="fas fa-search"></i>
+          </a>
           <button class="btn-outline">Opprett en konto</button>
           <button class="btn-outline">Min side</button>
         </div>
         <nav class="bottom-links">
           <ul>
-            <li><a href="#">Tips og inspirasjon</a></li>
-            <li><a href="#">Hotell</a></li>
+            <li><a href="#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+            <li><a href="hotell.html">Hotell</a></li>
             <li><a href="#">Fly</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
@@ -123,6 +127,7 @@
     </section>
 
     <section class="tips-inspiration">
+      <section id="tips-og-inspirasjon">
       <h2>Tips & inspirasjon</h2>
       <div class="card-grid">
         <div class="card">
@@ -176,6 +181,7 @@
           </div>
         </div>
       </div>
+    </section>
     </section>
     
 

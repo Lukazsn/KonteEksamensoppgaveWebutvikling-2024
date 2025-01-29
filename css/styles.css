@@ -4,10 +4,11 @@
   html, body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100vw; /* Forces full width without overflow */
     overflow-x: hidden !important;
   }
   
+
 
   .booking-section {
     flex-direction: column;
@@ -15,10 +16,17 @@
     padding: 10px;
   }
 
+  input, select, .form-container {
+    width: 100% !important;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .form-container {
-    flex: 1;
-    width: 100%;
-    padding: 15px;
+    flex: 1; /* Allow it to shrink properly */
+    max-width: 100%; /* Prevent it from exceeding screen width */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width */
   }
 
   .summary-container {
@@ -28,6 +36,7 @@
     margin-top: 20px;
   }
 
+  
   .form-row {
     flex-direction: column;
     gap: 10px;
@@ -41,8 +50,10 @@
     justify-content: space-between; 
     width: 100%;
   }
+  
   .birth-date input {
-    margin-top: 5px; 
+    width: 100%; /* Allow inputs to fit properly */
+    margin-right: 0;
   }
 
   .gender-options {
@@ -51,11 +62,6 @@
     gap: 10px;
   }
 
-  .submit-button {
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
 
   .form-container {
     max-width: 600px; 
@@ -98,9 +104,8 @@
     display: flex;
     overflow: hidden;
     position: relative;
-    margin: 0;
     padding: 0; 
-    width: 100vw;
+    width: 98vw;
   }
   
   .gallery-item {
