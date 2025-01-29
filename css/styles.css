@@ -4,7 +4,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    width: 100vw; /* Forces full width without overflow */
+    width: 100vw; 
     overflow-x: hidden !important;
   }
   
@@ -23,10 +23,10 @@
   }
 
   .form-container {
-    flex: 1; /* Allow it to shrink properly */
-    max-width: 100%; /* Prevent it from exceeding screen width */
+    flex: 1; 
+    max-width: 100%; 
     padding: 20px;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box; 
   }
 
   .summary-container {
@@ -52,7 +52,7 @@
   }
   
   .birth-date input {
-    width: 100%; /* Allow inputs to fit properly */
+    width: 100%; 
     margin-right: 0;
   }
 
