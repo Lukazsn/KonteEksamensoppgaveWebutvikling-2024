@@ -4,9 +4,76 @@
   html, body {
     margin: 0;
     padding: 0;
-    width: 100%; 
-    overflow-x: hidden; 
+    max-width: 100%;
+    overflow-x: hidden !important;
   }
+  
+
+  .booking-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .form-container {
+    flex: 1;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .summary-container {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .birth-date {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; 
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+  }
+  .birth-date input {
+    margin-top: 5px; 
+  }
+
+  .gender-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .form-container {
+    max-width: 600px; 
+  }
+
+  input, select {
+    width: 90% !important;
+  }
+
+
+  .submit-button {
+    width: 20%; 
+    margin-left: 40px;
+    margin-top: -60px;
+  }
+
+
+
 
   
   .promo-section {
@@ -31,9 +98,9 @@
     display: flex;
     overflow: hidden;
     position: relative;
-    width: 100vw;
     margin: 0;
     padding: 0; 
+    width: 100vw;
   }
   
   .gallery-item {
@@ -43,9 +110,9 @@
  
   .gallery-item.main-image:nth-of-type(1) {
     display: block;
-    width: 100vw; 
+    width: 98vw; 
     height: auto; 
-    object-fit: cover; 
+    max-width: 100%;
   }
   
 
@@ -187,7 +254,21 @@
   width: 100% !important;
   height: 300px !important;
 }
+
+  .summary-container {
+    display: none !important;
+  }
+
+
+  .promo-card:nth-of-type(2),
+  .promo-card:nth-of-type(3) {
+    display: none !important;
+  }
+
+
 }
+
+
 
 
 
@@ -862,13 +943,14 @@ input, select {
 .submit-button {
   background-color: #ffc107;
   color: #000;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 1rem;
   cursor: pointer;
   font-weight: bold;
   margin-left: 40px;
+  margin-top: -60px;
 }
 
 .submit-button:hover {
@@ -1237,10 +1319,8 @@ input, select {
 
 
 
-
 .room-options {
   padding: 2rem;
-  font-family: Arial, sans-serif;
 }
 
 .room-header {
@@ -1253,20 +1333,21 @@ input, select {
 }
 
 .room-header h2 {
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .room-header p {
-  color: #555;
-  margin: 0;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
 }
 
 .room-header button {
-  background-color: #00b4cc;
+  background-color: #0099cc;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -1293,8 +1374,10 @@ input, select {
 }
 
 .room-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0.5rem 0;
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 .room-card .room-rating {
@@ -1304,29 +1387,47 @@ input, select {
 }
 
 .room-rating .rating-score {
-  background-color: #00b244;
+  background-color: #008132;
   color: white;
   padding: 0.2rem 0.5rem;
   font-size: 0.9rem;
+  border-radius: 10px;
 }
 
 .room-rating .rating-text {
-  color: #555;
+  color: #000000;
 }
 
 .room-card h4 {
   font-size: 1.3rem;
-  color: #333;
+  color: #000000;
   margin: 0.5rem 0;
 }
 
 .room-card p {
   font-size: 0.9rem;
-  color: #777;
+  color: #000000;
   margin: 0.2rem 0;
+  font-weight: bold;
 }
 
+
+
+
+.hotel-rating {
+  margin-bottom: 20px;
+}
   
+.hotel-rating .rating-score {
+  background-color: #008132;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+
+
 
 .mobile-icons {
   display: none;
