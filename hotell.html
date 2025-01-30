@@ -223,28 +223,34 @@
 
   <footer class="footer">
     <div class="footer-content">
-  <div class="footer-flags">
-    <div class="flag-item">
-      <img src="flags/sweden.png" alt="Sverige" title="Sverige">
-      <span>Sverige</span>
-    </div>
-    <div class="flag-item">
-      <img src="flags/denmark.png" alt="Danmark" title="Danmark">
-      <span>Danmark</span>
-    </div>
-    <div class="flag-item">
-      <img src="flags/norway.png" alt="Norge" title="Norge">
-      <span>Norge</span>
-    </div>
-    <div class="flag-item">
-      <img src="flags/material.png" alt="Suomi" title="Suomi">
-      <span>Suomi</span>
-    </div>
-    <div class="flag-item">
-      <img src="flags/netherlands.png" alt="Nederland" title="Nederland">
-      <span>Nederland</span>
-    </div>
-  </div>
+        <div class="footer-flags">
+
+            <div class="flag-row top-row">
+                <div class="flag-item">
+                    <img src="flags/sweden.png" alt="Sverige" title="Sverige">
+                    <span>Sverige</span>
+                </div>
+                <div class="flag-item">
+                    <img src="flags/denmark.png" alt="Danmark" title="Danmark">
+                    <span>Danmark</span>
+                </div>
+                <div class="flag-item">
+                    <img src="flags/norway.png" alt="Norge" title="Norge">
+                    <span>Norge</span>
+                </div>
+            </div>
+
+            <div class="flag-row bottom-row">
+                <div class="flag-item">
+                    <img src="flags/material.png" alt="Suomi" title="Suomi">
+                    <span>Suomi</span>
+                </div>
+                <div class="flag-item">
+                    <img src="flags/netherlands.png" alt="Nederland" title="Nederland">
+                    <span>Nederland</span>
+                </div>
+            </div>
+        </div>
 
 
   <div class="footer-sections">
@@ -257,10 +263,11 @@
       </div>
       <div class="newsletter">
         <p>NYHETER & TILBUD</p>
-        <form>
-          <input type="email" placeholder="ola@example.com">
+        <label for="newsletter-input">Meld deg på nyhetsbrev her</label>
+        <div class="newsletter-box">
+          <input type="email" id="newsletter-input" placeholder="ola@example.com">
           <button type="submit">Send</button>
-        </form>
+        </div>
         <a href="#">Kjøp reisegavekort</a>
       </div>
       <div class="customer-service">
