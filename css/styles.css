@@ -491,6 +491,69 @@
   }
 
 
+
+  
+  .room-options {
+    padding: 1rem;
+    overflow: visible;
+  }
+
+  .room-header {
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 0;
+    padding: 0.5rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    overflow: visible;
+  }
+
+  .room-header .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 5px; 
+  }
+
+  .room-header h2 {
+    font-size: 18px; 
+    font-weight: bold;
+    margin: 0; 
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
+
+  .room-header p {
+    font-size: 12px; 
+    color: #000000;
+    font-weight: bold;
+    margin: 0; 
+    white-space: nowrap; 
+  }
+
+  .room-header button {
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    padding: 8px 12px; 
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap; 
+    flex-shrink: 0; 
+    margin-left: 420px !important; 
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    width: 15%; 
+
+  }
+
+
 }
 
 
@@ -1305,7 +1368,7 @@ input, select {
 
 
 
-
+/* Klarte ikke få til denne delen av koden, så jeg spurte chatgpt om hjelp, hvor det sa at jeg måtte fokusere på å bruke "nth-child" for å få til dette. Noe jeg ikke har brukt altfor mye før */
 
 
 .gallery {
@@ -1586,36 +1649,45 @@ input, select {
 .room-header {
   margin-top: -20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 10px;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid #e0e0e0; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: none;
 }
 
 .room-header h2 {
   font-size: 22px;
   font-weight: bold;
+  margin-top: 0px;
+  margin-left: 5px;
 }
 
 .room-header p {
-  font-size: 14px;
+  font-size: 12px; 
   color: #000000;
   font-weight: bold;
+  margin-top: -15px;
+  margin-left: 5px;
 }
-
 .room-header button {
   background-color: #0099cc;
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
+  margin-left: 720px;
 }
 
 .room-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   border: none;
 }
 
@@ -1626,7 +1698,7 @@ input, select {
   overflow: hidden;
   padding: 1rem;
   text-align: left;
-  border: none; 
+  border-bottom: 1px solid #e0e0e0; 
 }
 
 .room-card img {
@@ -1642,10 +1714,17 @@ input, select {
   margin-bottom: 30px;
 }
 
+.room-card p {
+  font-size: 14px;
+  color: #000000;
+  margin: 0;
+}
+
 .room-card .room-rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: bold;
 }
 
 .room-rating .rating-score {
@@ -1667,10 +1746,9 @@ input, select {
 }
 
 .room-card p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #000000;
   margin: 0.2rem 0;
-  font-weight: bold;
 }
 
 
