@@ -1004,8 +1004,8 @@ main {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #4c98af;
+  color: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -1023,20 +1023,22 @@ main {
 
 .card-content p {
   font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
+  color: #000000;
+  margin-bottom: 30px;
 }
 
-.card-price {
-  font-weight: bold;
-  color: #000;
-  font-size: 16px;
-}
-
+.card-price,
 .card-link {
-  font-weight: bold;
-  color: #007bff;
+  position: absolute;
+  margin-top: 10px;
+  bottom: -30px; /* Adjust as needed */
+  left: 2px;   /* Adjust as needed */
   font-size: 16px;
+  font-weight: bold;
+  color: #61adff;
+  text-decoration: none;
+  border-bottom: 3px solid #61adff;
+  padding-bottom: 2px;
   cursor: pointer;
 }
 
