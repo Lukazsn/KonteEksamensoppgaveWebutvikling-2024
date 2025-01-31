@@ -188,9 +188,6 @@
 }
 
 
-
-
-
   .booking-section {
     flex-direction: column;
     align-items: center;
@@ -457,8 +454,6 @@
 
 
 
-
-
 .overview-section {
   display: flex !important;
   flex-direction: column !important;
@@ -556,15 +551,7 @@
 
 }
 
-
-
-
-
-
-
-
-
-
+/* Body */
 
 body {
     margin: 0;
