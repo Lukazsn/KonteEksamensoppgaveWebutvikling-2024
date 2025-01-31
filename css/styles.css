@@ -59,7 +59,7 @@
     gap: 20px;
 }
   
-
+/* her fullførte github copilot litt av koden automatisk uten noe promt jeg har skrevet inn, har markert med enda en kode kommentar hvor jeg har skrevet resten av koden selv. */
 
 .footer-sections {
   display: flex;
@@ -68,6 +68,10 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.summary-details2 {
+  display: block !important;
 }
 
 
@@ -86,6 +90,7 @@
   margin-right: 10px;
 }
 
+/* Resten selv */
 
 .newsletter {
   text-align: left;
@@ -479,12 +484,20 @@
     display: none !important;
   }
 
+  details[open] .summary-container {
+    display: block !important;
+  }
+
 
   .promo-card:nth-of-type(2),
   .promo-card:nth-of-type(3) {
     display: none !important;
   }
 
+
+  .tab-arrow {
+    display: inline;
+  }
 
 
   
@@ -801,6 +814,11 @@ main {
     color: #ffc107;
 }
 
+
+.breadcrumb i {
+  font-size: 20px;
+  font-weight: bold;
+}
   
 
   .promo-section {
@@ -882,9 +900,9 @@ main {
 }
 
 .tab.active {
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #1ca2c1;
   font-weight: bold;
-  color: #007bff;
+  color: #1ca2c1;
 }
 
 
@@ -1159,6 +1177,10 @@ h1 {
   font-weight: bold;
   margin-bottom: 0px;
   text-align: initial;
+}
+
+.tab-arrow {
+  display: none;
 }
 
 .person-info {
@@ -1489,10 +1511,10 @@ input, select {
 .overview-section {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr; 
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto 1fr;
   gap: 20px;
   padding: 20px;
-  
 }
 
 
@@ -1555,6 +1577,9 @@ input, select {
   display: inline-block;
 }
 
+.overview-content {
+  grid-row: 2 / 3; 
+}
 
 
 .overview-content h2 {
@@ -1577,9 +1602,6 @@ input, select {
 }
 
 
-.facilities li {
-  margin-bottom: 10px;
-}
 
 .more-facilities-link {
   color: #007bff;
@@ -1588,6 +1610,14 @@ input, select {
   margin-top: 20px;
 }
 
+.map-container {
+  grid-row: 2 / 3; 
+}
+
+.room-options {
+  grid-column: span 2; 
+  grid-row: 4 / 5;
+}
 
 .map-container h2 {
   font-size: 1.5rem;
@@ -1726,17 +1756,18 @@ input, select {
   color: #000000;
 }
 
-.room-card h4 {
-  font-size: 1.3rem;
-  color: #000000;
-  margin: 0.5rem 0;
-}
 
-.room-card p {
+.room-card .price-details {
   font-size: 1rem;
   color: #000000;
-  margin: 0.2rem 0;
+  margin: 0.5rem 0;
+  list-style-type: none;
+  text-align: left;
+  margin-left: -40px;
 }
+
+
+
 
 
 
@@ -1763,4 +1794,9 @@ input, select {
 .gallery-item.main-image:first-of-type .heart-icon,
 .gallery-item.main-image:first-of-type .photo-count-icon {
   display: none; 
+}
+
+
+.summary-details2 {
+  display: none;
 }
